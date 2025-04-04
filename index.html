@@ -2,12 +2,361 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <nav class="navbar">
+        <input type="checkbox" name="checkbox" id="click">
+        <div class="logo">
+          <!-- <a href="/"><img src="" alt="logo">My Portfolio</a> -->
+           <h2>My Portfolio</h2>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-items active"><a href="#home" class="fancy-link">Home</a></li>
+          <li class="nav-items"><a href="#about" class="fancy-link">About</a></li>
+          <li class="nav-items"><a href="#skills" class="fancy-link">Skill</a></li>
+          <li class="nav-items"><a href="#project" class="fancy-link">Project</a></li>
+          <li class="nav-items"><a href="#certificates" class="fancy-link">Certificate</a></li>
+          <li class="nav-items"><a href="#contact" class="fancy-link">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button id="theme-toggle"><img src="assets/dark_mode.png" id="mode-toggle" alt="toggle mode image"></button>
+          <label for="click" class="bars"><i class="fa-solid fa-bars"></i></label>
+          <label for="click" class="x-mark"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-container">
+
+      <section id="home" class="wrapper">
+        <div class="left-wrapper">
+          <div class="hi-message flex">
+            <p>Hey there ! </p>
+            <img src="assets/love-you-gesture.png" alt="emoji">
+          </div>
+          <div class="heading">
+            <h1>I'm 
+              <span class="animated-text" id="font-size">Abhishek Verma</span>
+            </h1>
+          </div>
+          <div class="text-area">
+            <p class="first-para">I am a <span id="typing" class="fancy-color"> </span> <span class="cursor">|</span></p>
+             <p class="second-para">Welcome to my portfolio! I hope you enjoy your visit. I specialize in Back-End development with Node.js and Front-End development with React.js. I have worked on various projects, including a Real Link-Shortener, E-Commerce APIs, React-based Website Design and Development, and more.
+              I am passionate about learning new technologies and building solutions that make a difference. Thank you for visiting my portfolio! I hope you like my work. <span class="fancy-color">Happy coding!</span> 🧑🏻‍💻</p> 
+          </div>
+          <div class="social-icons">
+            <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-kumar-verma-825704210/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/Abhishe94003459" target="_blank"><i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+          </div>
+          <div class="button-area">
+            <button class="button btn flex" type="button">My Resume<i class="fa-solid fa-cloud-arrow-down"></i></button>
+            <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Contact <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+          </div>
+        </div>
+
+        <div class="right-wrapper flex">
+          <div class="outer-circle flex">
+            <div class="skill-logo flex"><img src="logo/css-3.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img src="logo/sass.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img src="logo/html-5.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img src="logo/js.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img src="logo/icons8-mongo-db-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img src="logo/icons8-tailwind-css-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img src="logo/social.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img src="logo/physics.png" alt="tools and technology logo" class="skill-image"></div>            
+          </div>
+          <div class="inner-circle flex">
+            <div id="first " class="skill-logo flex"><img src="logo/css-3.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="second" class="skill-logo  flex"><img src="logo/html-5.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="third" class="skill-logo flex"><img src="logo/icons8-mongo-db-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="fourth" class="skill-logo  flex"><img src="logo/icons8-tailwind-css-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="fifth" class="skill-logo flex"><img src="logo/social.png" alt="tools and technology logo" class="skill-image"></div>
+          </div>
+          <div class="text">
+            <p class="animated-text">SKILLS</p>
+          </div>          
+        </div>
+      </section>
+
+      <section id="about" class="container-area">
+       <div class="about-heading fancy-link">
+        <h3 class="animated-text">About Me</h3>
+       </div>
+        <div class="container flex">
+          <div class="about-left flex">
+            <div class="image-border">
+              <img src="assets/abhishek.png" alt="developer image">
+            </div>
+          </div>
+          <div class="about-right">
+            <p class="first-about-para">Greetings! I am Abhishek Verma, a dedicated and enthusiastic professional with a passion for technology and a Bachelor's degree in Computer Applications (BCA). I thrive on challenges and constantly seek opportunities to broaden my knowledge and skills in the ever-evolving field of technology.</p>
+            <p class="second-about-para">I successfully completed my Bachelor of Computer Applications, where I gained a strong foundation in computer science, programming, and information technology. This academic journey equipped me with the skills necessary to analyze problems, develop innovative solutions, and adapt to the dynamic nature of the tech industry.</p>
+            <p class="third-about-para">I am excited about the possibilities that lie ahead in my career, and I look forward to contributing my skills and knowledge to future endeavors. Thank you for visiting my portfolio, and feel free to reach out for any collaborative opportunities or discussions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="container-area">
+        <div class="about-heading fancy-link">
+          <h3 class="animated-text">Skill</h3>
+         </div>
+         <div class="skill-para">
+          <h2>Technologies I Use :  </h2>
+          <p>Over the years, I have worked with a variety of technologies. Here are some of the technologies I have experience with:</p>
+         </div>
+         <div class="skill-card-wrapper flex">
+            <div class="skill-card flex btn">
+              <img src="logo_svg/HTML5.svg" alt="html5 svg">
+              <p>HTML5</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/CSS3.svg" alt="CSS svg">
+              <p>CSS3</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Sass.svg" alt="Sass svg">
+              <p>Sass</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Tailwind CSS.svg" alt="Tailwind css svg">
+              <p>Tailwind Css</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Bootstrap.svg" alt="bootstrap svg">
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/JavaScript.svg" alt="JavaScript svg">
+              <p>Java Script</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Node.js.svg" alt="Node js svg">
+              <p>Node Js</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Express.svg" alt="express js svg">
+              <p>Express Js</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/React.svg" alt="React svg">
+              <p>React Js</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Next.js.svg" alt="Next js svg">
+              <p>Next Js</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Vite.js.svg" alt="vite svg">
+              <p>Vite</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Python.svg" alt="python svg">
+              <p>Python</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Git.svg" alt="git svg">
+              <p>Git</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/C++ (CPlusPlus).svg" alt="cpp svg">
+              <p>C++</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/C.svg" alt="c svg">
+              <p>C</p>
+            </div>
+            <div class="skill-card flex btn">
+              <img src="logo_svg/Java.svg" alt="java svg">
+              <p>Java</p>
+            </div>
+         </div>
+
+        <div class="slider" style="
+          --width: 100px;
+          --height: 50px;
+          --quantity: 10;">
+            <div class="list">       
+                <div class="item flex" style="--position: 1"><img src="logo_svg/Bootstrap.svg" alt="BOOTSTRAP svg"><p>Bootstrap</p></div>
+                <div class="item flex" style="--position: 2"><img src="logo_svg/C++ (CPlusPlus).svg" alt="cPP svg"><p>CPP</p></div>
+                <div class="item flex" style="--position: 3"><img src="logo_svg/C.svg" alt="html5 svg"><p>HTML5</p></div>
+                <div class="item flex" style="--position: 4"><img src="logo_svg/CSS3.svg" alt="html5 svg"><p>CSS3</p></div>
+                <div class="item flex" style="--position: 5"><img src="logo_svg/Express.svg" alt="html5 svg"><p>EXPRESS JS</p></div>
+                <div class="item flex" style="--position: 6"><img src="logo_svg/Git.svg" alt="html5 svg"><p>GIT</p></div>
+                <div class="item flex" style="--position: 7"><img src="logo_svg/JavaScript.svg" alt="html5 svg"><p>JAVA SCRIPT</p></div>
+                <div class="item flex" style="--position: 8"><img src="logo_svg/Java.svg" alt="html5 svg"><p>JAVA</p></div>
+                <div class="item flex" style="--position: 9"><img src="logo_svg/Tailwind CSS.svg" alt="html5 svg"><p>TAILWIND CSS</p></div>
+                <div class="item flex" style="--position: 10"><img src="logo_svg/React.svg" alt="html5 svg"><p>REACT</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="project" class="container-area">
+        <div class="about-heading fancy-link">
+          <h3 class="animated-text">Project</h3>
+         </div>
+         <div class="project-nav">
+          <ul class="project-nav-list filter flex">
+            <li class="project-nav-item filter-btn active" data-filter="all">All</li>
+            <li class="project-nav-item filter-btn" data-filter="frontend">Frontend</li>
+            <li class="project-nav-item filter-btn" data-filter="backend">Backend</li>
+            <li class="project-nav-item filter-btn" data-filter="fullstack">Fullstack</li>
+          </ul>
+         </div>
+
+
+         <div class="project-wrapper flex">
+
+          <div class="project-card conference" data-category="fullstack">
+
+            <img src="certification/javascript.png" alt="">
+
+            <div class="project-heading">
+              <h4>Currency Convertor</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">CSS</p>
+              <p class="tech">JAVASCRIPT</p>
+            </div>
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+            
+          </div>
+
+          <div class="project-card conference" data-category="frontend">
+
+            <img src="certification/javascript.png" alt="">
+
+            <div class="project-heading">
+              <h4>Currency Convertor</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">CSS</p>
+              <p class="tech">JAVASCRIPT</p>
+            </div>
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+          </div>
+         
+          <div class="project-card conference" data-category="frontend">
+
+            <img src="certification/javascript.png" alt="">
+
+            <div class="project-heading">
+              <h4>Currency Convertor</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">CSS</p>
+              <p class="tech">JAVASCRIPT</p>
+            </div>
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card conference" data-category="backend">
+
+            <img src="certification/responsive_web_design.png" alt="">
+
+            <div class="project-heading">
+              <h4>Currency Convertor</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">CSS</p>
+              <p class="tech">JAVASCRIPT</p>
+            </div>
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+          </div>
+          
+          
+
+         </div>
+
+
+        
+
+
+
+
+
+      </section>
+
+      <section id="certificates" class="container-area">
+        <div class="about-heading fancy-link">
+          <h3 class="animated-text">Certifications</h3>
+         </div>
+         <div class="card-wrapper flex">
+
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="certification/responsive_web_design.png" alt="">
+            </div>
+            <div class="flex" id="source-button">
+              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="certification/web_development.png" alt="">
+            </div>
+            <div class="flex" id="source-button">
+              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="certification/javascript.png" alt="">
+            </div>
+            <div class="flex" id="source-button">
+              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+            </div>
+          </div>         
+         
+         </div>
+      </section>
+
+    </main>
+
+      
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
