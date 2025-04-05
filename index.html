@@ -13,24 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="dark-mode">  
+    <div id="loader" class="flex">
+      <img src="assets/loader.gif" alt="loader gif">
+    </div>  
     <header class="header">
       <nav class="navbar">
         <input type="checkbox" name="checkbox" id="click">
         <div class="logo">
-          <!-- <a href="/"><img src="" alt="logo">My Portfolio</a> -->
            <h2>My Portfolio</h2>
         </div>
         <ul class="nav-list">
           <li class="nav-items active"><a href="#home" class="fancy-link">Home</a></li>
           <li class="nav-items"><a href="#about" class="fancy-link">About</a></li>
-          <li class="nav-items"><a href="#skills" class="fancy-link">Skill</a></li>
+          <li class="nav-items"><a href="#skills" class="fancy-link">Skills</a></li>
           <li class="nav-items"><a href="#project" class="fancy-link">Project</a></li>
-          <li class="nav-items"><a href="#certificates" class="fancy-link">Certificate</a></li>
+          <li class="nav-items"><a href="#certificates" class="fancy-link">Certificates</a></li>
           <li class="nav-items"><a href="#contact" class="fancy-link">Contact</a></li>
         </ul>
         <div class="nav-right">
-          <button id="theme-toggle"><img src="assets/dark_mode.png" id="mode-toggle" alt="toggle mode image"></button>
+          <button id="theme-toggle"><img loading="lazy" src="assets/dark_mode.png" id="mode-toggle" alt="toggle mode image"></button>
           <label for="click" class="bars"><i class="fa-solid fa-bars"></i></label>
           <label for="click" class="x-mark"><i class="fa-solid fa-xmark"></i></label>
         </div>
@@ -43,7 +45,7 @@
         <div class="left-wrapper">
           <div class="hi-message flex">
             <p>Hey there ! </p>
-            <img src="assets/love-you-gesture.png" alt="emoji">
+            <img loading="lazy" src="assets/love-you-gesture.png" alt="emoji">
           </div>
           <div class="heading">
             <h1>I'm 
@@ -52,7 +54,7 @@
           </div>
           <div class="text-area">
             <p class="first-para">I am a <span id="typing" class="fancy-color"> </span> <span class="cursor">|</span></p>
-             <p class="second-para">Welcome to my portfolio! I hope you enjoy your visit. I specialize in Back-End development with Node.js and Front-End development with React.js. I have worked on various projects, including a Real Link-Shortener, E-Commerce APIs, React-based Website Design and Development, and more.
+             <p class="second-para">Welcome to my portfolio! I hope you enjoy your visit. I specialize in Back-End development with Node.js and Front-End development with React.js. I have worked on various projects, React-based Website Design and Development, and more.
               I am passionate about learning new technologies and building solutions that make a difference. Thank you for visiting my portfolio! I hope you like my work. <span class="fancy-color">Happy coding!</span> 🧑🏻‍💻</p> 
           </div>
           <div class="social-icons">
@@ -70,21 +72,21 @@
 
         <div class="right-wrapper flex">
           <div class="outer-circle flex">
-            <div class="skill-logo flex"><img src="logo/css-3.png" alt="tools and technology logo" class="skill-image"></div>
-            <div class="skill-logo flex"><img src="logo/sass.png" alt="tools and technology logo" class="skill-image"></div>
-            <div class="skill-logo flex"><img src="logo/html-5.png" alt="tools and technology logo" class="skill-image"></div>
-            <div class="skill-logo flex"><img src="logo/js.png" alt="tools and technology logo" class="skill-image"></div>
-            <div class="skill-logo flex"><img src="logo/icons8-mongo-db-48.png" alt="tools and technology logo" class="skill-image"></div>
-            <div class="skill-logo flex"><img src="logo/icons8-tailwind-css-48.png" alt="tools and technology logo" class="skill-image"></div>
-            <div class="skill-logo flex"><img src="logo/social.png" alt="tools and technology logo" class="skill-image"></div>
-            <div class="skill-logo flex"><img src="logo/physics.png" alt="tools and technology logo" class="skill-image"></div>            
+            <div class="skill-logo flex"><img loading="lazy" src="logo/css-3.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img loading="lazy" src="logo/sass.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img loading="lazy" src="logo/html-5.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img loading="lazy" src="logo/js.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img loading="lazy" src="logo/icons8-mongo-db-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img loading="lazy" src="logo/icons8-tailwind-css-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img loading="lazy" src="logo/social.png" alt="tools and technology logo" class="skill-image"></div>
+            <div class="skill-logo flex"><img loading="lazy" src="logo/physics.png" alt="tools and technology logo" class="skill-image"></div>            
           </div>
           <div class="inner-circle flex">
-            <div id="first " class="skill-logo flex"><img src="logo/css-3.png" alt="tools and technology logo" class="skill-image"></div>
-            <div id="second" class="skill-logo  flex"><img src="logo/html-5.png" alt="tools and technology logo" class="skill-image"></div>
-            <div id="third" class="skill-logo flex"><img src="logo/icons8-mongo-db-48.png" alt="tools and technology logo" class="skill-image"></div>
-            <div id="fourth" class="skill-logo  flex"><img src="logo/icons8-tailwind-css-48.png" alt="tools and technology logo" class="skill-image"></div>
-            <div id="fifth" class="skill-logo flex"><img src="logo/social.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="first " class="skill-logo flex"><img loading="lazy" src="logo/css-3.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="second" class="skill-logo  flex"><img loading="lazy" src="logo/html-5.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="third" class="skill-logo flex"><img loading="lazy" src="logo/icons8-mongo-db-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="fourth" class="skill-logo  flex"><img loading="lazy" src="logo/icons8-tailwind-css-48.png" alt="tools and technology logo" class="skill-image"></div>
+            <div id="fifth" class="skill-logo flex"><img loading="lazy" src="logo/social.png" alt="tools and technology logo" class="skill-image"></div>
           </div>
           <div class="text">
             <p class="animated-text">SKILLS</p>
@@ -99,13 +101,14 @@
         <div class="container flex">
           <div class="about-left flex">
             <div class="image-border">
-              <img src="assets/abhishek.png" alt="developer image">
+              <img loading="lazy" src="assets/abhishek.png" alt="developer image">
             </div>
           </div>
           <div class="about-right">
-            <p class="first-about-para">Greetings! I am Abhishek Verma, a dedicated and enthusiastic professional with a passion for technology and a Bachelor's degree in Computer Applications (BCA). I thrive on challenges and constantly seek opportunities to broaden my knowledge and skills in the ever-evolving field of technology.</p>
-            <p class="second-about-para">I successfully completed my Bachelor of Computer Applications, where I gained a strong foundation in computer science, programming, and information technology. This academic journey equipped me with the skills necessary to analyze problems, develop innovative solutions, and adapt to the dynamic nature of the tech industry.</p>
-            <p class="third-about-para">I am excited about the possibilities that lie ahead in my career, and I look forward to contributing my skills and knowledge to future endeavors. Thank you for visiting my portfolio, and feel free to reach out for any collaborative opportunities or discussions.</p>
+            <p class="first-about-para">Greetings! I am <span class="fancy-color">Abhishek Kumar Verma</span>, a dedicated and enthusiastic professional with a passion for technology. I hold a Bachelor's degree in Computer Applications (BCA) from the University of Allahabad and am currently pursuing a Master of Computer Applications (MCA) at Kamla Nehru Institute of Technology (KNIT), Sultanpur.</p>
+            <p class="second-about-para">I thrive on challenges and constantly seek opportunities to broaden my knowledge and skills in the ever-evolving field of technology. My academic journey has provided me with a strong foundation in computer science, programming, and information technology, along with practical experience in C, C++, Python and web development <span class="fancy-color">(HTML, CSS, JavaScript, React.js)</span>. Additionally, I am exploring Data Structures & Algorithms (DSA),Web Development and Java to expand my expertise.</p>
+            <p class="third-about-para">I am excited about the possibilities that lie ahead in my career, and I look forward to contributing my skills and knowledge to future endeavors. Thank you for visiting my portfolio, and <span class="fancy-color">feel free to reach out for any collaborative opportunities or discussions!</span>             
+            </p>
           </div>
         </div>
       </section>
@@ -114,92 +117,96 @@
         <div class="about-heading fancy-link">
           <h3 class="animated-text">Skill</h3>
          </div>
+        <p class="under-heading">These are my working Skills & Services I have done.
+
+        </p>
+
          <div class="skill-para">
           <h2>Technologies I Use :  </h2>
           <p>Over the years, I have worked with a variety of technologies. Here are some of the technologies I have experience with:</p>
          </div>
          <div class="skill-card-wrapper flex">
             <div class="skill-card flex btn">
-              <img src="logo_svg/HTML5.svg" alt="html5 svg">
+              <img loading="lazy" src="logo_svg/HTML5.svg" alt="html5 svg">
               <p>HTML5</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/CSS3.svg" alt="CSS svg">
+              <img loading="lazy" src="logo_svg/CSS3.svg" alt="CSS svg">
               <p>CSS3</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Sass.svg" alt="Sass svg">
+              <img loading="lazy" src="logo_svg/Sass.svg" alt="Sass svg">
               <p>Sass</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Tailwind CSS.svg" alt="Tailwind css svg">
+              <img loading="lazy" src="logo_svg/Tailwind CSS.svg" alt="Tailwind css svg">
               <p>Tailwind Css</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Bootstrap.svg" alt="bootstrap svg">
+              <img loading="lazy" src="logo_svg/Bootstrap.svg" alt="bootstrap svg">
               <p>Bootstrap</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/JavaScript.svg" alt="JavaScript svg">
+              <img loading="lazy" src="logo_svg/JavaScript.svg" alt="JavaScript svg">
               <p>Java Script</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Node.js.svg" alt="Node js svg">
+              <img loading="lazy" src="logo_svg/Node.js.svg" alt="Node js svg">
               <p>Node Js</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Express.svg" alt="express js svg">
+              <img loading="lazy" src="logo_svg/Express.svg" alt="express js svg">
               <p>Express Js</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/React.svg" alt="React svg">
+              <img loading="lazy" src="logo_svg/React.svg" alt="React svg">
               <p>React Js</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Next.js.svg" alt="Next js svg">
+              <img loading="lazy" src="logo_svg/Next.js.svg" alt="Next js svg">
               <p>Next Js</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Vite.js.svg" alt="vite svg">
+              <img loading="lazy" src="logo_svg/Vite.js.svg" alt="vite svg">
               <p>Vite</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Python.svg" alt="python svg">
+              <img loading="lazy" src="logo_svg/Python.svg" alt="python svg">
               <p>Python</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Git.svg" alt="git svg">
+              <img loading="lazy" src="logo_svg/Git.svg" alt="git svg">
               <p>Git</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/C++ (CPlusPlus).svg" alt="cpp svg">
+              <img loading="lazy" src="logo_svg/C++ (CPlusPlus).svg" alt="cpp svg">
               <p>C++</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/C.svg" alt="c svg">
+              <img loading="lazy" src="logo_svg/C.svg" alt="c svg">
               <p>C</p>
             </div>
             <div class="skill-card flex btn">
-              <img src="logo_svg/Java.svg" alt="java svg">
+              <img loading="lazy" src="logo_svg/Java.svg" alt="java svg">
               <p>Java</p>
             </div>
          </div>
 
         <div class="slider" style="
-          --width: 100px;
+          --width: 180rem;
           --height: 50px;
           --quantity: 10;">
             <div class="list">       
-                <div class="item flex" style="--position: 1"><img src="logo_svg/Bootstrap.svg" alt="BOOTSTRAP svg"><p>Bootstrap</p></div>
-                <div class="item flex" style="--position: 2"><img src="logo_svg/C++ (CPlusPlus).svg" alt="cPP svg"><p>CPP</p></div>
-                <div class="item flex" style="--position: 3"><img src="logo_svg/C.svg" alt="html5 svg"><p>HTML5</p></div>
-                <div class="item flex" style="--position: 4"><img src="logo_svg/CSS3.svg" alt="html5 svg"><p>CSS3</p></div>
-                <div class="item flex" style="--position: 5"><img src="logo_svg/Express.svg" alt="html5 svg"><p>EXPRESS JS</p></div>
-                <div class="item flex" style="--position: 6"><img src="logo_svg/Git.svg" alt="html5 svg"><p>GIT</p></div>
-                <div class="item flex" style="--position: 7"><img src="logo_svg/JavaScript.svg" alt="html5 svg"><p>JAVA SCRIPT</p></div>
-                <div class="item flex" style="--position: 8"><img src="logo_svg/Java.svg" alt="html5 svg"><p>JAVA</p></div>
-                <div class="item flex" style="--position: 9"><img src="logo_svg/Tailwind CSS.svg" alt="html5 svg"><p>TAILWIND CSS</p></div>
-                <div class="item flex" style="--position: 10"><img src="logo_svg/React.svg" alt="html5 svg"><p>REACT</p></div>
+                <div class="item flex" style="--position: 1"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>RESPONSIVE</p></div>
+                <div class="item flex" style="--position: 2"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>DYNAMIC</p></div>
+                <div class="item flex" style="--position: 3"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>SECURE</p></div>
+                <div class="item flex" style="--position: 4"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>RELIABLE</p></div>
+                <div class="item flex" style="--position: 5"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>ENGAGING</p></div>
+                <div class="item flex" style="--position: 6"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>INTERACTIVE</p></div>
+                <div class="item flex" style="--position: 7"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>ACCESSIBLE</p></div>
+                <div class="item flex" style="--position: 8"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>SEARCH OPTIMIZED</p></div>
+                <div class="item flex" style="--position: 9"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>USER FRIENDLY</p></div>
+                <div class="item flex" style="--position: 10"><img loading="lazy" src="assets/stars.png" alt="sparkle image"><p>USABLE</p></div>
             </div>
           </div>
         </div>
@@ -208,7 +215,8 @@
       <section id="project" class="container-area">
         <div class="about-heading fancy-link">
           <h3 class="animated-text">Project</h3>
-         </div>
+        </div>
+        <p class="under-heading">Here are some of my projects I have done.</p>
          <div class="project-nav">
           <ul class="project-nav-list filter flex">
             <li class="project-nav-item filter-btn active" data-filter="all">All</li>
@@ -221,98 +229,171 @@
 
          <div class="project-wrapper flex">
 
-          <div class="project-card conference" data-category="fullstack">
+          <div class="project-card conference" data-category="frontend">
 
-            <img src="certification/javascript.png" alt="">
+            <img loading="lazy" src="project_img/portfolio.png" alt="portfolio image">
 
             <div class="project-heading">
-              <h4>Currency Convertor</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+              <h4>Animated Portfolio</h4>
+              <p>Portfolio App is built with HTML, CSS, and JavaScript, using GSAP for smooth animations. It showcases your skills, projects, and experience with an interactive, visually appealing, and responsive design.</p>
             </div>
             
             <div class="project-tech flex">
               <p class="tech">HTML</p>
-              <p class="tech">CSS</p>
-              <p class="tech">JAVASCRIPT</p>
+              <p class="tech">Css</p>
+              <p class="tech">Javascript</p>
+              <p class="tech">GSAP</p>
             </div>
             <div class="project-live flex" id="project-live">
-              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
-              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+              <button class="project-button button btn flex" type="button"><a href="https://abhi1224.github.io/Porfolio/" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224/Porfolio" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
             </div>
             
           </div>
 
           <div class="project-card conference" data-category="frontend">
 
-            <img src="certification/javascript.png" alt="">
+            <img loading="lazy" src="project_img/Currency-Convertor.png" alt="Currency-Convertor image">
 
             <div class="project-heading">
               <h4>Currency Convertor</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+              <p>This Currency Converter project is a web application built with HTML, CSS, and JavaScript. It allows users to convert currencies in real-time using an intuitive and responsive interface.</p>
             </div>
             
             <div class="project-tech flex">
               <p class="tech">HTML</p>
-              <p class="tech">CSS</p>
-              <p class="tech">JAVASCRIPT</p>
+              <p class="tech">Css</p>
+              <p class="tech">Javascript</p>
             </div>
             <div class="project-live flex" id="project-live">
-              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
-              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+              <button class="project-button button btn flex" type="button"><a href="pending.html" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224/JS/tree/main/Currency_Coverter" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+            
+          </div>
+
+          <div class="project-card conference" data-category="frontend">
+
+            <img loading="lazy" src="project_img/Netflix.png" alt="Netflix page image">
+
+            <div class="project-heading">
+              <h4>Netflix Clone</h4>
+              <p>Netflix Clone project is a web application built with HTML, Tailwind CSS, and React.js. It replicates Netflix's UI, offering a responsive design and dynamic content rendering for an immersive experience..</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">Tailwind Css</p>
+              <p class="tech">React Js</p>
+            </div>
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="pending.html" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224/Netflix_Clone" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
             </div>
           </div>
          
           <div class="project-card conference" data-category="frontend">
 
-            <img src="certification/javascript.png" alt="">
+            <img loading="lazy" src="project_img/Free-Script-Writing-Software-Nolan.png" alt="nolan image">
 
             <div class="project-heading">
-              <h4>Currency Convertor</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+              <h4>Nolanai Clone</h4>
+              <p> NolanAI Clone project is a web application built with HTML, Tailwind CSS, and JavaScript. It replicates NolanAI, a film industry service hub, offering a sleek, responsive, and user-friendly interface.</p>
             </div>
             
             <div class="project-tech flex">
               <p class="tech">HTML</p>
-              <p class="tech">CSS</p>
-              <p class="tech">JAVASCRIPT</p>
+              <p class="tech">Tailwind Css</p>
+              <p class="tech">Javascript</p>
             </div>
             <div class="project-live flex" id="project-live">
-              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
-              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+              <button class="project-button button btn flex" type="button"><a href="https://abhi1224.github.io/landing_page_nolanai/" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224/landing_page_nolanai" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
             </div>
           </div>
 
-          <div class="project-card conference" data-category="backend">
+          <div class="project-card conference" data-category="fullstack">
 
-            <img src="certification/responsive_web_design.png" alt="">
+            <img loading="lazy" src="project_img/restaurant.png" alt="restaurant web image">
 
             <div class="project-heading">
-              <h4>Currency Convertor</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus quam laboriosam excepturi tempora? Sequi eligendi placeat omnis ea nisi.</p>
+              <h4>Restaurant Web application</h4>
+              <p> Restaurant Web Application is built with HTML, Bootstrap, and JavaScript for the frontend, and Python for the backend. It provides an interactive platform for browsing menus, ordering food, and managing reservations.</p>
             </div>
             
             <div class="project-tech flex">
               <p class="tech">HTML</p>
-              <p class="tech">CSS</p>
-              <p class="tech">JAVASCRIPT</p>
+              <p class="tech">Bootstrap</p>
+              <p class="tech">Javascript</p>
+              <p class="tech">Python</p>
+            </div>
+
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="pending.html" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224/Restaurant-website" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card conference" data-category="frontend">
+
+            <img loading="lazy" src="project_img/rock-paper-scissor.png" alt="rock-paper-scissor image">
+
+            <div class="project-heading">
+              <h4>Rock Paper Scissor Game</h4>
+              <p>Rock Paper Scissors game is built with HTML, CSS, and JavaScript. It offers an interactive and fun gameplay experience, allowing users to compete against the computer with a simple and responsive interface.</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">Tailwind Css</p>
+              <p class="tech">Javascript</p>
             </div>
             <div class="project-live flex" id="project-live">
-              <button class="project-button button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="project-button button btn flex" type="button"><a href="https://github.com/abhi1224/JS/tree/main/rock_paper_Scissor" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
               <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
             </div>
           </div>
-          
-          
+
+          <div class="project-card conference" data-category="frontend">
+
+            <img loading="lazy" src="project_img/To-Do.png" alt="To do image">
+
+            <div class="project-heading">
+              <h4>To Do List</h4>
+              <p> To-Do App is built with HTML, CSS, and JavaScript. It helps users manage tasks efficiently with features like adding, deleting, and marking tasks as complete in a simple and responsive interface.</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">Tailwind Css</p>
+              <p class="tech">Javascript</p>
+            </div>
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="https://github.com/abhi1224/JS/tree/main/To_Do_List" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card conference" data-category="frontend">
+
+            <img loading="lazy" src="project_img/tic-tac-toe.png" alt="tic-tac-toe image">
+
+            <div class="project-heading">
+              <h4>Tic Tac Toe Game</h4>
+              <p>Tic Tac Toe Game game is built with HTML, CSS, and JavaScript. It offers an interactive and fun gameplay experience, allowing users to compete against the computer with a simple and responsive interface.</p>
+            </div>
+            
+            <div class="project-tech flex">
+              <p class="tech">HTML</p>
+              <p class="tech">Tailwind Css</p>
+              <p class="tech">Javascript</p>
+            </div>
+            <div class="project-live flex" id="project-live">
+              <button class="project-button button btn flex" type="button"><a href="https://github.com/abhi1224/JS/tree/main/Tic_Tac_Toe" target="_blank" class="contact-icon">Visit live site<i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <a href="https://github.com/abhi1224" target="_blank"><i class="fa-brands fa-github" id="project-github"></i></a>
+            </div>
+          </div>
 
          </div>
-
-
-        
-
-
-
-
-
       </section>
 
       <section id="certificates" class="container-area">
@@ -323,38 +404,68 @@
 
           <div class="card">
             <div class="image-wrapper">
-              <img src="certification/responsive_web_design.png" alt="">
+              <img loading="lazy" src="certification/responsive_web_design.png" alt="certificate">
             </div>
             <div class="flex" id="source-button">
-              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
-              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.freecodecamp.org/certification/fcc028751f1-b76e-46df-9d24-66ca0b7daa27/responsive-web-design" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
             </div>
           </div>
           
           <div class="card">
             <div class="image-wrapper">
-              <img src="certification/web_development.png" alt="">
+              <img loading="lazy" src="certification/web_development.png" alt="certificate">
             </div>
             <div class="flex" id="source-button">
-              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
-              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com/certificates/CC-LVNRU280" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="image-wrapper">
+              <img loading="lazy" src="certification/javascript.png" alt="certificate">
+            </div>
+            <div class="flex" id="source-button">
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com/en/certificates/CC-RFW0THI1" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+            </div>
+          </div> 
+
+          <div class="card">
+            <div class="image-wrapper">
+              <img loading="lazy" src="certification/pythoncore.png" alt="certificate">
+            </div>
+            <div class="flex" id="source-button">
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com/certificates/CC-5AR43LMY" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
             </div>
           </div>
           <div class="card">
             <div class="image-wrapper">
-              <img src="certification/javascript.png" alt="">
+              <img loading="lazy" src="certification/pythonintermediate.png" alt="">
             </div>
             <div class="flex" id="source-button">
-              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
-              <button class="button btn flex" type="button"><a href="https://linktr.ee/Abhishek__1224" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com/certificates/CT-PDRCT3M2" target="_blank" class="contact-icon">Certification Id <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="button btn flex" type="button"><a href="https://www.sololearn.com" target="_blank" class="contact-icon">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
             </div>
           </div>         
          
          </div>
       </section>
 
+      <section id="contact" class="container-area">
+        <div class="about-heading fancy-link">
+          <h3 class="animated-text">Contact Me</h3>
+         </div>
+      </section>
     </main>
 
+    <footer>
+      <div class="footer-wrapper">
+        <p>Made with <span>💖</span>by <strong>Abhishek Verma</strong></p>
+      </div>
+    </footer>
       
 
     <script type="module" src="/src/main.js"></script>

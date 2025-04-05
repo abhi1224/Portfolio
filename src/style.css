@@ -106,6 +106,22 @@ li{
   list-style: none;
   
 }
+#loader{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  inset:0;
+  background-color:white;
+  transition: all 0.5s linear;
+}
+.under-heading{
+  text-align: center;
+  font-size: 2rem;
+  margin-block-end: 4rem;
+  font-family: "Noto Sans", sans-serif;
+
+}
 .container-area{
   min-height: calc(100vh - var(--padding-inline));
   width: 100%;
@@ -118,7 +134,7 @@ li{
 }
 .navbar{
   position: fixed;
-  z-index: 100;
+  z-index: 2;
   inset: 0;
   display: flex;
   justify-content: space-between;
@@ -450,7 +466,7 @@ li{
 .text {
   position: absolute;
   left: 4%;
-  z-index: 11111111111;
+  z-index: 1;
   width: 100%;
 }
 .animated-text{
@@ -817,10 +833,11 @@ li{
   overflow: hidden;
   mask-image: linear-gradient(
     to right, 
-    transparent,
+    transparent 0%,
     #000,
-    transparent
+    transparent 
   );
+  /* background-color: #102542; */
 }
 .slider .list{
   display: flex;
@@ -829,6 +846,7 @@ li{
   min-width: calc(var(--width) * var(--quantity));
 }
 .slider .list .item{
+  font-size: 2rem;
   width: var(--width);
   height: var(--height);
   gap: 1rem;
@@ -839,6 +857,7 @@ li{
   will-change: transform;
   
 }
+
 
 
 @keyframes autoRun {
@@ -859,8 +878,15 @@ li{
     width: 100%;
   }
   .slider{
-    --width:60rem !important;
+    --width:180rem !important;
   }
 }
 /*Skill section end*/
 
+/*footer section start*/
+.footer-wrapper{
+  text-align: center;
+  font-size: 2rem;
+  padding: var(--padding-inline);
+}
+/*footer section end*/

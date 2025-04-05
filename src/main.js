@@ -33,7 +33,7 @@ const modeToggle = document.getElementById('mode-toggle');
 
 
 
-
+// Typing text effect
  const texts = ["JavaScript Developer", "React Js Developer", "Node.js Developer", "Responsive Web Designer","Frontend Developer", "Full Stack Developer"];
         let textIndex = 0;
         let charIndex = 0;
@@ -68,7 +68,7 @@ const modeToggle = document.getElementById('mode-toggle');
         typeEffect(); // Start animation
 
 
-
+// Project filter
 const filterList = document.querySelector('.filter');
 const filterButtons = filterList.querySelectorAll('.filter-btn');
 const conferences = document.querySelectorAll('.conference');
@@ -77,10 +77,15 @@ filterButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         const filter = e.target.getAttribute('data-filter');
 
-        document.startViewTransition(() => {
-            updateActiveButton(e.target);  
+        if (document.startViewTransition) {
+            document.startViewTransition(() => {
+                updateActiveButton(e.target);
+                filterConf(filter);
+            });
+        } else {
+            updateActiveButton(e.target);
             filterConf(filter);
-        })
+        }
         
     })
 })
@@ -108,15 +113,26 @@ function filterConf(confFilter){
 // Nav active button 
 
 const navList = document.querySelector('.nav-list');
-const navItems = navList.querySelectorAll('.nav-items');
+const navItems = navList.querySelectorAll('.nav-items'); 
+
 navItems.forEach((button) => {
-    button.addEventListener('click', (e) =>{
-        updateNavActiveButton(e.target);
-    })
-})
-function updateNavActiveButton(button){
-    button.addEventListener('click', (e) =>{
-        navList.querySelector('.active').classList.remove('active');
-        button.classList.add('active');
-    })
+    button.addEventListener('click', () => {
+        updateNavActiveButton(button);
+    });
+});
+
+function updateNavActiveButton(button) {
+    const activeButton = navList.querySelector('.active');
+    if (activeButton) {
+        activeButton.classList.remove('active');
+    }
+    button.classList.add('active');
 }
+
+// loader
+
+const loader = document.querySelector("#loader");
+
+window.addEventListener("load", () => {
+    loader.style.top = '-200%';
+})
