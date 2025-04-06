@@ -9,11 +9,11 @@ const modeToggle = document.getElementById('mode-toggle');
      // Save theme preference in localStorage
      if (document.body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
-        modeToggle.src = './public/light.png';
+        modeToggle.src = 'public/light.png';
 
      } else {
         localStorage.setItem("theme", "light");
-        modeToggle.src = './public/dark.png';
+        modeToggle.src = 'public/dark.png';
 
      }
  }
@@ -22,7 +22,7 @@ const modeToggle = document.getElementById('mode-toggle');
     window.onload = function () {
         if (localStorage.getItem("theme") === "dark") {
          document.body.classList.add("dark-mode");
-         modeToggle.src = './public/light.png';
+         modeToggle.src = 'public/light.png';
         }
     };
 
