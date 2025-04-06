@@ -136,3 +136,34 @@ const loader = document.querySelector("#loader");
 window.addEventListener("load", () => {
     loader.style.top = '-200%';
 })
+
+
+
+// contact form 
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx9wkhIxh5zu0frAXWgCLyx1G6d5taBJ7FNNfG7mCFcmKD6-SA2hH0jXPCXoiZuvZf-NA/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        // console.log('Success!', response)
+        msg.innerHTML = "Message sent successfully";
+        msg.style.color = "green";
+        setTimeout(function(){
+            msg.innerHTML = "";
+        },5000)
+        form.reset();
+    })
+      .catch(error => {
+        // console.error('Error!', error.message)
+        msg.innerHTML = "Error occurred";
+        msg.style.color = "red";
+        setTimeout(function(){
+            msg.innerHTML = "";
+        },5000)
+        form.reset();
+      })
+  })

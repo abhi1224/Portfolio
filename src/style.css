@@ -726,7 +726,10 @@ li{
 .project-wrapper{
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-block: 5rem;
+}
+.project-wrapper:hover .project-card:not(:hover){
+  filter: blur(2px);
 }
 .project-card{
   border: 0.1px solid var(--btn-bg);
@@ -734,10 +737,16 @@ li{
   overflow: hidden;
   min-height: 50rem;
   flex-basis: 40rem;
+  transition: all 0.2s linear;
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+  }
 }
 .project-card img{
   height: 60%;
   object-fit: cover;
+  transition: all 0.2s linear;
 }
 .project-heading{
   padding: 1.5rem 2rem;
@@ -769,6 +778,9 @@ li{
 .project-live{
   justify-content: flex-start;
   padding: 3rem 2rem;
+}
+.see-more-btn{
+  color: white;
 }
 #project-github{
   font-size: 3.5rem;
@@ -882,11 +894,49 @@ li{
   }
 }
 /*Skill section end*/
+/*contact section start*/
+.contact-wrapper{
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap-reverse;
+}
+.contact-info-wrapper{
+  margin-block: 3rem;
+}
+.contact-info{
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-block: 1.5rem;
+  font-family:  "Nunito", sans-serif;
+  font-size: 2rem;
+}
+.contact-right input, textarea{
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  color: var(--text-primary);
+  border: 1px solid var(--btn-bg);
+  margin-block: 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.555);
+}
+#msg{
+  display: block;
+}
+#form-submit{
+  margin-block: 3rem;
+  width: 30%;
+}
 
+/*contact section end*/
 /*footer section start*/
 .footer-wrapper{
-  text-align: center;
   font-size: 2rem;
   padding: var(--padding-inline);
+  height: var(--nav-height);
+  box-shadow: 2px 2px 5px var(--animation-border);
 }
 /*footer section end*/
