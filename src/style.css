@@ -189,7 +189,7 @@ li{
   align-items: center; 
   cursor: pointer;
 }
-#theme-toggle img[src="assets/dark_mode.png"]{
+#theme-toggle img[src="../assets/dark.png"]{
   mix-blend-mode: difference;
 }
 
